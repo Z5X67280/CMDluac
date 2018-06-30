@@ -1,0 +1,191 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Windows 10|Win32">
+      <Configuration>Windows 10</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Windows 7|Win32">
+      <Configuration>Windows 7</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Windows 10|x64">
+      <Configuration>Windows 10</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Windows 7|x64">
+      <Configuration>Windows 7</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{E7CB9AC2-A4A8-4D42-A096-3D3AC671F803}</ProjectGuid>
+    <RootNamespace>CMDluac</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17134.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 10|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 7|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141_xp</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 10|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Windows 7|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Windows 10|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Windows 7|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Windows 10|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Windows 7|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Windows 10|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_MBCS;%(PreprocessorDefinitions);_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Windows 10|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Windows 7|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <PreprocessorDefinitions>_USING_V110_SDK71_;%(PreprocessorDefinitions);_CRT_SECURE_NO_DEPRECATE;_SCL_SECURE_NO_DEPRECATE</PreprocessorDefinitions>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Windows 7|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="D:\Source\Lua\src\lapi.c" />
+    <ClCompile Include="D:\Source\Lua\src\lauxlib.c" />
+    <ClCompile Include="D:\Source\Lua\src\lbaselib.c" />
+    <ClCompile Include="D:\Source\Lua\src\lbitlib.c" />
+    <ClCompile Include="D:\Source\Lua\src\lcode.c" />
+    <ClCompile Include="D:\Source\Lua\src\lcorolib.c" />
+    <ClCompile Include="D:\Source\Lua\src\lctype.c" />
+    <ClCompile Include="D:\Source\Lua\src\ldblib.c" />
+    <ClCompile Include="D:\Source\Lua\src\ldebug.c" />
+    <ClCompile Include="D:\Source\Lua\src\ldo.c" />
+    <ClCompile Include="D:\Source\Lua\src\ldump.c" />
+    <ClCompile Include="D:\Source\Lua\src\lfunc.c" />
+    <ClCompile Include="D:\Source\Lua\src\lgc.c" />
+    <ClCompile Include="D:\Source\Lua\src\linit.c" />
+    <ClCompile Include="D:\Source\Lua\src\liolib.c" />
+    <ClCompile Include="D:\Source\Lua\src\llex.c" />
+    <ClCompile Include="D:\Source\Lua\src\lmathlib.c" />
+    <ClCompile Include="D:\Source\Lua\src\lmem.c" />
+    <ClCompile Include="D:\Source\Lua\src\loadlib.c" />
+    <ClCompile Include="D:\Source\Lua\src\lobject.c" />
+    <ClCompile Include="D:\Source\Lua\src\lopcodes.c" />
+    <ClCompile Include="D:\Source\Lua\src\loslib.c" />
+    <ClCompile Include="D:\Source\Lua\src\lparser.c" />
+    <ClCompile Include="D:\Source\Lua\src\lstate.c" />
+    <ClCompile Include="D:\Source\Lua\src\lstring.c" />
+    <ClCompile Include="D:\Source\Lua\src\lstrlib.c" />
+    <ClCompile Include="D:\Source\Lua\src\ltable.c" />
+    <ClCompile Include="D:\Source\Lua\src\ltablib.c" />
+    <ClCompile Include="D:\Source\Lua\src\ltm.c" />
+    <ClCompile Include="D:\Source\Lua\src\luac.c" />
+    <ClCompile Include="D:\Source\Lua\src\lundump.c" />
+    <ClCompile Include="D:\Source\Lua\src\lutf8lib.c" />
+    <ClCompile Include="D:\Source\Lua\src\lvm.c" />
+    <ClCompile Include="D:\Source\Lua\src\lzio.c" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="D:\Source\Lua\src\lapi.h" />
+    <ClInclude Include="D:\Source\Lua\src\lauxlib.h" />
+    <ClInclude Include="D:\Source\Lua\src\lcode.h" />
+    <ClInclude Include="D:\Source\Lua\src\lctype.h" />
+    <ClInclude Include="D:\Source\Lua\src\ldebug.h" />
+    <ClInclude Include="D:\Source\Lua\src\ldo.h" />
+    <ClInclude Include="D:\Source\Lua\src\lfunc.h" />
+    <ClInclude Include="D:\Source\Lua\src\lgc.h" />
+    <ClInclude Include="D:\Source\Lua\src\llex.h" />
+    <ClInclude Include="D:\Source\Lua\src\llimits.h" />
+    <ClInclude Include="D:\Source\Lua\src\lmem.h" />
+    <ClInclude Include="D:\Source\Lua\src\lobject.h" />
+    <ClInclude Include="D:\Source\Lua\src\lopcodes.h" />
+    <ClInclude Include="D:\Source\Lua\src\lparser.h" />
+    <ClInclude Include="D:\Source\Lua\src\lprefix.h" />
+    <ClInclude Include="D:\Source\Lua\src\lstate.h" />
+    <ClInclude Include="D:\Source\Lua\src\lstring.h" />
+    <ClInclude Include="D:\Source\Lua\src\ltable.h" />
+    <ClInclude Include="D:\Source\Lua\src\ltm.h" />
+    <ClInclude Include="D:\Source\Lua\src\lua.h" />
+    <ClInclude Include="D:\Source\Lua\src\lua.hpp" />
+    <ClInclude Include="D:\Source\Lua\src\luaconf.h" />
+    <ClInclude Include="D:\Source\Lua\src\lualib.h" />
+    <ClInclude Include="D:\Source\Lua\src\lundump.h" />
+    <ClInclude Include="D:\Source\Lua\src\lvm.h" />
+    <ClInclude Include="D:\Source\Lua\src\lzio.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="D:\Source\Lua\src\Makefile" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
